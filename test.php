@@ -1,8 +1,13 @@
- $postData = array(
+<?php
+include 'autoload.php';
+
+use  Valitron\Validator;
+
+  $postData = array(
                   'product_id' => 10009,
                   'product_type' => 5,
                   'link_number' => 2,
-                  'task_link' => 'http://e.inner.evente.cn:30280/900764?',
+                  'task_link' => 'http://e.inner.evente.cn:30280/900764',
                   'task_name' => 'www'
                 );
 
@@ -35,4 +40,5 @@
                echo '<pre>';
                print_r($Validator->errors());
            }
+
 
